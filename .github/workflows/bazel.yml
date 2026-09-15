@@ -1,0 +1,21 @@
+name: Bazel Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bazel-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Bazel
+        uses: bazel-contrib/setup-bazel@0.15.0
+
+      - name: Show Bazel version
+        run: bazel version
+
+      - name: Build target
+        run: bazel build //:hello
