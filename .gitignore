@@ -1,0 +1,14 @@
+# Bazel
+bazel-*
+*.bazelrc.user
+
+# Logs
+*.log
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store

@@ -1,4 +1,4 @@
-filegroup(
-    name = "all_files",
-    srcs = glob(["**"]),
+cc_binary(
+    name = "hello",
+    srcs = ["main.cc"],
 )
