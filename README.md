@@ -5,11 +5,12 @@ A minimal Bazel module example using Bzlmod.
 ## Files
 
 - `MODULE.bazel`: defines the Bazel module and dependencies
-- `BUILD.bazel`: defines a simple filegroup target
+- `BUILD.bazel`: defines Bazel build and test targets
 
-## Requirements
+## Targets
 
-Bazel is required to run builds locally.
+- `//:hello`
+- `//:hello_test`
 
 ## Notes
 
