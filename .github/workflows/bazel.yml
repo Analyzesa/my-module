@@ -1,4 +1,4 @@
-name: Bazel Check
+name: Bazel Build and Test
 
 on:
   workflow_dispatch:
@@ -19,3 +19,6 @@ jobs:
 
       - name: Build target
         run: bazel build //:hello
+
+      - name: Test target
+        run: bazel test //:hello_test
